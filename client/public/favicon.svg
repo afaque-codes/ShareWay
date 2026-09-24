@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <!-- Map Pin Gradient -->
+    <linearGradient id="pinGradient" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#00a89d" />
+      <stop offset="50%" stop-color="#008e87" />
+      <stop offset="100%" stop-color="#026b68" />
+    </linearGradient>
+
+    <!-- Left Leaf Gradient -->
+    <linearGradient id="leftLeafGradient" x1="0%" y1="20%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#6bc859" />
+      <stop offset="45%" stop-color="#40ab50" />
+      <stop offset="100%" stop-color="#1b7e47" />
+    </linearGradient>
+
+    <!-- Right Leaf Gradient -->
+    <linearGradient id="rightLeafGradient" x1="100%" y1="20%" x2="10%" y2="90%">
+      <stop offset="0%" stop-color="#55c052" />
+      <stop offset="45%" stop-color="#349d47" />
+      <stop offset="100%" stop-color="#116b3d" />
+    </linearGradient>
+
+    <!-- Subtle Soft Drop Shadow -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.12" flood-color="#002d2c" />
+    </filter>
+  </defs>
+
+  <g id="shareway-emblem" filter="url(#subtleShadow)">
+    <!-- Left Leaf -->
+    <path d="M 120 205
+             C 114 185, 96 170, 72 162
+             C 42 152, 22 128, 20 95
+             C 19 82, 25 70, 32 64
+             C 40 58, 54 60, 68 67
+             C 94 80, 110 112, 118 148
+             C 119 152, 120 180, 120 205 Z"
+          fill="url(#leftLeafGradient)" />
+
+    <!-- Left Leaf Vein Accent -->
+    <path d="M 120 205
+             C 115 178, 102 148, 80 125
+             C 65 109, 45 95, 32 64"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          opacity="0.25" />
+
+    <!-- Right Leaf -->
+    <path d="M 120 205
+             C 126 185, 144 170, 168 162
+             C 198 152, 218 128, 220 95
+             C 221 82, 215 70, 208 64
+             C 200 58, 186 60, 172 67
+             C 146 80, 130 112, 122 148
+             C 121 152, 120 180, 120 205 Z"
+          fill="url(#rightLeafGradient)" />
+
+    <!-- Right Leaf Vein Accent -->
+    <path d="M 120 205
+             C 125 178, 138 148, 160 125
+             C 175 109, 195 95, 208 64"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          opacity="0.25" />
+
+    <!-- Center Sprout Stem Base -->
+    <path d="M 116 195
+             C 116 208, 118 218, 120 220
+             C 122 218, 124 208, 124 195 Z"
+          fill="#1b7e47" />
+
+    <!-- Center Map Pin (Eco Location Marker) -->
+    <path d="M 120 25
+             C 97.9 25, 80 42.9, 80 65
+             C 80 94, 114 136, 120 143
+             C 126 136, 160 94, 160 65
+             C 160 42.9, 142.1 25, 120 25 Z
+             M 120 80
+             C 111.7 80, 105 73.3, 105 65
+             C 105 56.7, 111.7 50, 120 50
+             C 128.3 50, 135 56.7, 135 65
+             C 135 73.3, 128.3 80, 120 80 Z"
+          fill="url(#pinGradient)"
+          fill-rule="evenodd" />
+
+    <!-- Subtle Pin Highlight for Depth -->
+    <path d="M 120 28
+             C 139 28, 155 43, 156 62
+             C 151 46, 137 34, 120 34
+             C 107 34, 95 41, 88 53
+             C 93 39, 105 28, 120 28 Z"
+          fill="#ffffff"
+          opacity="0.2" />
+  </g>
+</svg>

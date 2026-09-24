@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0b2b3d;
+  --color-brand-teal: #008f87;
+  --color-brand-teal-light: #00a89d;
+  --color-brand-teal-dark: #006c66;
+  --color-brand-green: #40ab50;
+  --color-brand-green-light: #6bc859;
+  --color-brand-slate: #475f6e;
+  --color-brand-surface: #f4f7f6;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Prevent Leaflet elements from bleeding over sticky navbars, topbars, or modals */
+.leaflet-container {
+  isolation: isolate;
+  z-index: 0 !important;
+}
+
+.leaflet-pane {
+  z-index: 1 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 2 !important;
+}
+
+.leaflet-control {
+  z-index: 2 !important;
+}
